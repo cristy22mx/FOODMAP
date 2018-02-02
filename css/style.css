@@ -1,0 +1,42 @@
+  body{
+    background: #2B2B2B;
+    height: 100vh;
+  }
+
+
+  .container-fluid{
+    background: #2B2B2B;
+  } 
+
+  .container{
+    margin:2%;
+    background: #2B2B2B;
+  }
+
+  h1, h2, p{
+    color: #C6813F;
+  }
+
+  hr{
+    border: 1px solid white;
+  }
+
+
+  body > div.container-fluid.text-center > div:nth-child(2) > div > div > div > span > button{
+    background-color: #2B2B2B;
+    color: white;
+  }
+
+
+
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+
+
+  .retraso1{
+    animation-delay: 6s;
+  }
+  
+
