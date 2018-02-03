@@ -3,8 +3,9 @@
 
 function loadPage(){
   paintWall(data);
-  // $("#buscar").keyup(filterRestaurant);
-
+  paintmodal(data);
+  $("#buscar").keyup(filterRestaurant);
+  $("#myModal").clic(paintmodal);
 }
 
 function paintWall (restaurant) {
@@ -31,14 +32,14 @@ function paintWall (restaurant) {
     $div3.addClass("caption");
     $name.addClass("text-center");
     $tipo.addClass("text-center");
-
+    
+    $("#btn btn-info center-block").trigger("click");
 
     // Asignando valores
     $name.text(food.restaurante);
     $tipo.text(food.tipo);
     $imagen.html($imagen);
     $button.text("Ver más");
-
 
 
     $div.append($div1);
@@ -52,17 +53,17 @@ function paintWall (restaurant) {
     
     // agregamos lo que creamos con el Dom a un elemento existente del html
 
-    $("#paintRestaurant").prepend($div);  
+    $("#paintRestaurant").append($div);  
   });     
 };
 
 // function filterRestaurant(){ 
 
 //   var buscarRestaurante = $("buscar").val().toLowerCase();
-  
+
 //   if($("#buscar").val().trim().length > 0) {
 //     var filterRestaurantes = restaurantes.filter(function(restaurant){
-           
+
 //            return food.tipo.toLowerCase().indexOf(buscarRestaurante) >= 0;
 //          });
 //     $("#paintRestaurant").empty();
@@ -76,9 +77,65 @@ function paintWall (restaurant) {
 //     });
 //   }
 
+// function paintmodal (modales) {
+
+//   restaurant.forEach(function(vista) {
+
+//     // crear elementos con DOM
+//     var $div = $("<div />", {
+//       "id": "myModal"
+//     });
+//     var $modalSm = $("<div />");
+//     var $modalContent = $("<div />");
+//     var $modalHeader = $("<div />");
+//     var $button=$("<button />");
+//     var $name = $("<h4 />");
+//     var $modalBody = $("<div />");
+//     var $mapa = $("img />")
+//     var $tipo =$("<p />");
+//     var $modalFooter = $("<h3 />");
+//     var $button=$("<button />");
 
 
-  $(document).ready(loadPage);
+//     //  atributos y eventos a los elementos creados en el DOM
+//     var $div.addClass("modal fade");
+//     var $modalSm.addClass("modal-dialog modal-sm");
+//     var $modalContent.addClass("modal-content");
+//     var $modalHeader.addClass("modal-header");
+//     var $button.addClass("close");
+//     var $name.addClass("modal-title");
+//     var $modalBody.addClass("modal-body");
+//     var $imagen.attr('src'vista.mapa);
+//     var $imagen.addClass("img-responsive");
+//     var $modalFooter.addClass("modal-footer");
+//     var $button.addClass("btn btn-default");
+
+//     // Asignando valores
+//     $name.text(vista.restaurante);
+//     $tipo.text(vista.tipo);
+//     $imagen.html($mapa);
+//     $button.text("x");
+
+
+
+//     $div.append($modalSm);
+//     $modalSm.append($modalContent);
+//     $modalContent.append($modalHeader);
+//     $modalHeader.append($button);
+//     $modalHeader.append($h4);
+//     $modalBody.append($p);
+//     $modalBody.append($imagen);
+//     $modalFooter.append($button);
+
+    // agregamos lo que creamos con el Dom a un elemento existente del html
+
+//     $("#paintModal")($button);  
+//   });     
+// };
+
+
+
+$(document).ready(loadPage);
 
 
 
@@ -124,3 +181,54 @@ function paintWall (restaurant) {
           'Error: The Geolocation service failed.' :
           'Error: Your browser doesn\'t support geolocation.');
       };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function buscar(){
+//   $("#buscar").on("keyup", function() {
+//     var value = $(this).val().toLowerCase();
+//     $("#paintRestaurant *").filter(function() {
+//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//     });
+//   });
+// };
