@@ -1,0 +1,28 @@
+# FOODMAP
+***
+
+## Flujo de trabajo: 
+
+1. Desarrollar una web con una libreria, en este ejercicio se utiliza Boostrap.
+
+2. Consumir una api, para este desarrollo se utiliza google maps.
+
+3. Generar un desplegado con la información de los distintos opciones de restaurantes.
+
+## Objetivo
+
+El usuario podrá conocer los restaurantes más cercanos a su ubicación:
+
+![Foodmap](assets/images/foodmapresentation.jpg) 
+![Foodmap](assets/images/foodmapresentation1.jpg) 
+ 
+
+
+
+
+## Consideraciones generales
+
+Este reto se utilizaron las siguientes herramientas:
+
+- Trello para administra el proyecto y la definición de objetivos.
+
