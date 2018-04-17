@@ -14,7 +14,7 @@
 El usuario podrá conocer los restaurantes más cercanos a su ubicación:
 
 ![image](https://user-images.githubusercontent.com/29492900/38887758-50182dcc-423f-11e8-9a86-9ef00bb930ec.png)
-![Foodmap](assets/images/foodmapresentation1.jpg) 
+![image](https://user-images.githubusercontent.com/29492900/38887807-7230e02a-423f-11e8-8ef1-7e06181bdbdb.png) 
  
 
 
